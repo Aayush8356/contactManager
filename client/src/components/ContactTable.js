@@ -23,12 +23,13 @@ const ContactTable = () => {
   const { token, isLoggedIn } = useAuth();
   const [file, setFile] = useState([]);
   const navigate = useNavigate();
+  const URL = "https://contactmanagerbackend-tde1.onrender.com";
   if (!isLoggedIn) {
     navigate('/logout');
   }
   async function getContacts() {
     try {
-      const response = await fetch(`http://localhost:5000/contact/`, {
+      const response = await fetch(`${URL}/contact/`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
