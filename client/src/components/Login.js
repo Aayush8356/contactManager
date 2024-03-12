@@ -15,7 +15,7 @@ const Login = () => {
     username: '',
     password: '',
   });
-  const URL = 'http://localhost:5000';
+  const URL = 'https://contactmanagerbackend-tde1.onrender.com';
 
   const { storeTokenInLS, userAuthentication } = useAuth();
   const navigate = useNavigate();
