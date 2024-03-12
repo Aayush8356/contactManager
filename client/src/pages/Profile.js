@@ -7,7 +7,7 @@ const Profile = () => {
   const [username, setusername] = useState(user.username);
   const [email, setEmail] = useState(user.email);
   const [loading, setLoading] = useState(true);
-  const URL = 'http://localhost:5000';
+  const URL = 'https://contactmanagerbackend-tde1.onrender.com';
   const userAuthentication = async () => {
     try {
       const response = await fetch(`${URL}/user/current`, {
