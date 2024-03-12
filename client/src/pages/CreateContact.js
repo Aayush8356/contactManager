@@ -20,7 +20,7 @@ const CreateContact = () => {
     phone: '',
   });
   const { token, isLoggedIn } = useAuth();
-  const URL = 'http://localhost:5000';
+  const URL = 'https://contactmanagerbackend-tde1.onrender.com';
   const navigate = useNavigate();
 
   const [condition, setCondition] = useState(false);
