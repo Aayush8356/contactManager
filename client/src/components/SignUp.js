@@ -16,7 +16,7 @@ const SignUp = () => {
     email: '',
     password: '',
   });
-  const URL = 'http://localhost:5000';
+  const URL = 'https://contactmanagerbackend-tde1.onrender.com';
 
   const navigate = useNavigate();
 
