@@ -5,7 +5,7 @@ export const AuthContext = createContext();
 export const AuthProvider = ({ children }) => {
   const [token, setToken] = useState(localStorage.getItem('token'));
   const [user, setUser] = useState({});
-  const URL = 'http://localhost:5000';
+  const URL = 'https://contactmanagerbackend-tde1.onrender.com';
 
   const storeTokenInLS = serverToken => {
     setToken(serverToken);
